@@ -6,6 +6,8 @@
   <% end %>
 </ul>
 
+<a href="/?page=<%= @page - 1%>"><< prev</a> || <a href="/?page=<%= @page + 1%>">next >></a>
+
 <h3>Search by First or Last name:</h3>
 
 <form action="/search" method="post">
