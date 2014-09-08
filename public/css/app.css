@@ -1,0 +1,19 @@
+body {
+  font-family: helvetica, arial;
+  font-size: 1.5em;
+  padding: 0 25px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: #000;
+}
