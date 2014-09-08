@@ -16,6 +16,28 @@ get '/contacts/:id' do
   erb :show
 end
 
+get '/create' do
+  erb :create
+end
+
+get '/error' do
+  erb :error
+end
+
+post '/create' do
+  first = params['firstname']
+  last = params['lastname']
+  phone = params['phone']
+
+  if first == "" || last == "" || phone == ""
+    redirect '/error'
+  else
+    new_contact = Contact.create(first_name: "#{first}", last_name: "#{last}", phone_number: "#{phone}")
+    new_contact.save
+    redirect '/'
+  end
+end
+
 post '/search' do
   first = params['firstname']
   last = params['lastname']
