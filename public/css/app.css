@@ -17,3 +17,7 @@ a:hover, a:active {
   text-decoration: underline;
   color: #000;
 }
+
+input {
+  font-size: 1em;
+}

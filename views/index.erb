@@ -5,3 +5,11 @@
     <li><a href="/contacts/<%= contact.id %>"><%= contact.name %></a></li>
   <% end %>
 </ul>
+
+<h3>Search by First or Last name:</h3>
+
+<form action="/search" method="post">
+<input type="text" name="firstname" size="30" maxlength="30" placeholder="First Name"><br>
+<input type="text" name="lastname" size="30" maxlength="30" placeholder="Last Name"><br>
+<input type = "submit">
+</form>

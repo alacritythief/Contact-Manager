@@ -1,0 +1,9 @@
+<h1>Search Results:</h1>
+
+<ul>
+  <% @results.each do |result| %>
+    <li><a href="/contacts/<%= result.id %>"><%= result.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/"><< Back to Contacts List</a>
